@@ -27,7 +27,7 @@ sudo netfilter-persistent save
 # clone LoadMaster
 git clone https://github.com/adventuresoul/Sample_web_services.git
 
-cd Sample_web_service
+cd Sample_web_services
 cd node_web_service
 
 # Install dependencies
