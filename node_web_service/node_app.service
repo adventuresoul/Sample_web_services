@@ -1,0 +1,13 @@
+[Unit]
+Description=Nodejs web application
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /home/ubuntu/LoadMaster/web_service index.js
+WorkingDirectory=/home/ubuntu/LoadMaster/web_service
+Restart=always
+User=ubuntu
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
