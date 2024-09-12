@@ -27,16 +27,14 @@ sudo netfilter-persistent save
 # clone LoadMaster
 git clone https://github.com/adventuresoul/Sample_web_services.git
 
-cd Sample_web_service/node_web_service
+cd Sample_web_service
+cd node_web_service
 
 # Install dependencies
 npm install 
 
 # Run application
 # node index.js
-
-# go to parent dir
-cd ../master_node
 
 # copy service to /etc/systemd/service
 sudo cp node_app.service /etc/systemd/system
@@ -46,4 +44,5 @@ sudo systemctl daemon-reload
 sudo systemctl start node_app
 sudo systemctl enable node_app
 sudo systemctl status node_app
+
 

@@ -3,8 +3,8 @@ Description=Nodejs web application
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/node /home/ubuntu/LoadMaster/web_service index.js
-WorkingDirectory=/home/ubuntu/LoadMaster/web_service
+ExecStart=/usr/bin/node /home/ubuntu/Sample_web_service/node_web_service index.js
+WorkingDirectory=/home/ubuntu/Sample_web_service/node_web_service
 Restart=always
 User=ubuntu
 Environment=NODE_ENV=production
